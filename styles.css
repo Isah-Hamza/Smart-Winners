@@ -9,6 +9,7 @@ p, li, ul{
 .fs-12{ font-size: 12px;}
 .fs-13{ font-size: 13px;}
 .fs-14{ font-size: 14px; }
+.fw-regular { font-weight: 500; }
 .light-gray{ color: #5F5F5F; }
 .cp{ cursor: pointer; }
 .bg-primary{
@@ -108,6 +109,7 @@ footer{
 
 @media screen and (max-width:992px) {
     .custom-container{
+        overflow-x: hidden;
         padding-inline: 20px !important;
     }
     main.mt-5{
@@ -115,6 +117,10 @@ footer{
     }
     .logo{
         width: 100%;
+    }
+    footer{
+        padding-right: 5% !important;
+        padding-left: 5% !important;
     }
 }
 
@@ -130,14 +136,21 @@ footer{
         font-size: 14px;
     }
     header .logo-img { width: 210px !important; }
-    .hero img{
+    .hero img{ height: 180px; }
+    .hero img,
+    footer{
         width: calc(100% + 28px) !important;
-        height: 180px;
         transform: translateX(-14px);
     }
     .five-grid{
         grid-template-columns: repeat(2,1fr);
     }
+    .biggest-winners{ width: 100%; }
+    footer .last p{ 
+        font-size: 16px !important;  
+        white-space: nowrap;
+    }
+    .methods{ gap: 6px;}
 }
 
 
