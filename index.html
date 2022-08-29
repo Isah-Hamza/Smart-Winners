@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smart Winners is a we application that allow you to play online lottery games and win money into your account" />
+    <meta name="keywords" content="Smart Winners, Online Lottery, Online Game,Win, Pick, Buy, Meta Million, "/>
+    <meta name="author" content="Isah Hamza">
+
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
     <title>Smart Winners</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@1,300&display=swap" rel="stylesheet">
+
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     
@@ -14,6 +25,9 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
+    <!-- Custom Javascript -->
+    <script defer src="./main.js"></script>
+
 </head>
 <body>
     <div class="custom-container mx-auto px-5 pt-4">
@@ -21,7 +35,7 @@
             <div class="w-100 d-flex justify-content-between">
                 <div class="left d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center w-100">
                     <div class="logo d-flex justify-content-between align-items-center d-lg-block">
-                        <div class="d-block d-lg-none">
+                        <div data-menu class="d-block d-lg-none">
                             <img src="assets/images/menu.png" alt="menu">
                         </div>
                         <img class="logo-img" src="./assets/images/logo.png" alt="Smart Winners Logo" />
@@ -57,14 +71,15 @@
                     </div>
                 </div>
             </div>
-            <nav class="nav d-none d-lg-flex rounded-3 mt-4 justify-content-between align-items-center">
-                <ul class=" d-flex gap-4 text-uppercase text-white fw-semibold">
+            <nav class="nav top-0 d-block d-lg-flex rounded-3 pt-5 pt-lg-0 mt-lg-4 justify-content-between align-items-center">
+                <span data-close class="d-inline d-lg-none position-absolute text-white">&times;</span>
+                <ul class="mt-5 mt-lg-0 d-flex flex-column flex-lg-row gap-lg-4 gap-5 text-uppercase text-white fw-semibold">
                     <li class="border-end border-white pe-4 cp">Home</li>
                     <li class="border-end border-white pe-4 cp">PLay All Lottery</li>
                     <li class="border-end border-white pe-4 cp">Lottery groups</li>
                     <li class="border-end border-white pe-4 cp">Promotions</li>
                 </ul>
-                <button style="background-color:#0061A3;" class="fw-semibold border-0 h-100 rounded-2 text-white px-5 text-uppercase">
+                <button style="background-color:#0061A3;" class="mt-5 mt-lg-0 ms-4 ms-lg-0 py-2 fw-semibold border-0 h-100 rounded-2 text-white px-5 text-uppercase">
                     My Account
                 </button>
             </nav>
@@ -74,8 +89,8 @@
                 <img class="d-none d-lg-block w-100" src="./assets/images/desktop-banner.png" alt="banner">
                 <img class="d-block d-lg-none w-100" src="./assets/images/banner-small.png" alt="banner">
             </section>
-            <section class="my-4 px-2">
-                <div class="row gy-2 gy-md-4 pt-2">
+            <div class="my-4 ">
+                <section class="row gy-2 gy-md-4 pt-2 px-2 px-md-0">
                     <div class="px-0 px-sm-2 col-12 col-md-6 col-lg-4">
                         <div class="pick d-flex gap-2 h-100 border rounded-3 p-2">
                             <div>
@@ -84,9 +99,9 @@
                             <div>
                                 <div class="fs-14 d-flex justify-content-between align-items-center mb-1">
                                     <p class="text-uppercase fw-bold">you pick</p>
-                                    <a href="#">Play Now > </a>
+                                    <a href="#" title="Play Now">Play Now > <span style="margin-left: -8px;" class="d-inline-block">></span></a>
                                 </div>
-                                <p class="fs-12 light-gray">It’s easy! Pick from over 40 official lottery games you wish to play. Then select your winning numbers.</p>
+                                <p class="fs-13 light-gray">It’s easy! Pick from over 40 official lottery games you wish to play. Then select your winning numbers.</p>
                             </div>
                         </div>
                     </div>
@@ -98,9 +113,10 @@
                             <div>
                                 <div class="fs-14 d-flex justify-content-between align-items-center mb-1">
                                     <p class="text-uppercase fw-bold">we buy</p>
-                                    <a href="#">More Details > </a>
+                                    <a href="#" title="More Details">More Details >
+                                    <span style="margin-left: -8px;" class="d-inline-block">></span> </a>
                                 </div>
-                                <p class="fs-12 light-gray">Once you’ve picked your winning numbers we’ll purchase your ticket on your behalf.</p>
+                                <p class="fs-13 light-gray">Once you’ve picked your winning numbers we’ll purchase your ticket on your behalf.</p>
                             </div>
                         </div> 
                     </div>
@@ -112,14 +128,16 @@
                             <div>
                                 <div class="fs-14 d-flex justify-content-between align-items-center mb-1">
                                     <p class="text-uppercase fw-bold">you win!!!</p>
-                                    <a href="#">Withdraw My Winnings > </a>
+                                    <a href="#" title="Withdraw My Winnings">Withdraw My Winnings >
+                                        <span style="margin-left: -8px;" class="d-inline-block">></span>
+                                    </a>
                                 </div>
-                                <p class="fs-12 light-gray">When you win, we’ll automatically credit your account the full value of your winnings.</p>
+                                <p class="fs-13 light-gray">When you win, we’ll automatically credit your account the full value of your winnings.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="pt-5 mt-2">
+                </section>
+                <section class="pt-5 px-2 px-md-0 mt-2">
                     <p class="fw-bold mb-4">BIGGEST UPCOMING LOTTERY DRAWS</p>
                     <div class="row gy-3 gy-md-4">
                         <div class="px-0 px-sm-2 col-12 col-md-6 col-lg-4">
@@ -192,8 +210,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="pt-md-5 mt-5">
+                </section>
+                <section class="pt-md-5 mt-5">
                     <button class="red-bg rounded-3 text-center text-white p-2 border-0 w-100 fw-semibold">PLAY UPCOMING LOTTERIES ONLINE</button>
                     <div class="five-grid d-grid mt-4 px-md-2 px-lg-4">
                         <div data-tenTimes class="position-relative p-2 d-flex flex-column justify-content-center align-items-center border rounded-3">
@@ -203,7 +221,7 @@
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
-                                <p class="text-uppercase fs-14 fw-semibold">Mega millions</p>
+                                <p class="text-uppercase fs-14 fw-regular">Mega millions</p>
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
@@ -219,7 +237,7 @@
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
-                                <p class="text-uppercase fs-14 fw-semibold">Mega millions</p>
+                                <p class="text-uppercase fs-14 fw-regular">Mega millions</p>
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
@@ -235,7 +253,7 @@
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
-                                <p class="text-uppercase fs-14 fw-semibold">Mega millions</p>
+                                <p class="text-uppercase fs-14 fw-regular">Mega millions</p>
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
@@ -251,7 +269,7 @@
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
-                                <p class="text-uppercase fs-14 fw-semibold">Mega millions</p>
+                                <p class="text-uppercase fs-14 fw-regular">Mega millions</p>
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
@@ -267,7 +285,7 @@
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
-                                <p class="text-uppercase fs-14 fw-semibold">Mega millions</p>
+                                <p class="text-uppercase fs-14 fw-regular">Mega millions</p>
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
@@ -283,7 +301,7 @@
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
-                                <p class="text-uppercase fs-14 fw-semibold">Mega millions</p>
+                                <p class="text-uppercase fs-14 fw-regular">Mega millions</p>
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
@@ -299,7 +317,7 @@
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
-                                <p class="text-uppercase fs-14 fw-semibold">Mega millions</p>
+                                <p class="text-uppercase fs-14 fw-regular">Mega millions</p>
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
@@ -315,7 +333,7 @@
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
-                                <p class="text-uppercase fs-14 fw-semibold">Mega millions</p>
+                                <p class="text-uppercase fs-14 fw-regular">Mega millions</p>
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
@@ -331,7 +349,7 @@
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
-                                <p class="text-uppercase fs-14 fw-semibold">Mega millions</p>
+                                <p class="text-uppercase fs-14 fw-regular">Mega millions</p>
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
@@ -347,7 +365,7 @@
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
-                                <p class="text-uppercase fs-14 fw-semibold">Mega millions</p>
+                                <p class="text-uppercase fs-14 fw-regular">Mega millions</p>
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
@@ -357,9 +375,12 @@
                             <button style="" class="text-center yellow-btn px-4 border-0 rounded-3 w-100 mt-2 fw-semibold"> Play Now</button>
                         </div>
                     </div>
-                    <p class="text-end pe-4 mt-3 fw-semibold"><a href="#">More Details ></a></p>
-                </div>
-                <div class="pt-4 mt-5">
+                    <p class="text-end pe-4 mt-3 fw-semibold"><a href="#" title="More Details">More Details >
+                        <span style="margin-left: -8px;" class="d-inline-block">></span>
+                        </a>
+                    </p>
+                </section>
+                <section class="pt-4 mt-5 px-2 px-md-0">
                     <div class="row g-5 g-lg-3">
                         <div class="px-3 col-12 col-xl-8">
                             <button class="red-bg rounded-3 text-center text-white p-2 border-0 w-100 fw-semibold">BIGGEST LOTTERY WINNER</button>
@@ -372,12 +393,12 @@
                                     </div>
                                 </div>
                                 <div class="d-flex flex-column flex-md-row gap-3">
-                                    <div class="flex flex-column">
+                                    <div class="d-flex flex-column">
                                         <img  class="biggest-winners mx-auto" src="/assets/images/biggest-winners.png" alt="bigest winner">
                                         <div class="mt-3 d-flex justify-content-center gap-3">
                                             <p class="fw-regular text-uppercase fs-6 text-nowrap">UK Lotto results:</p>
                                             <div>
-                                                <div class="d-flex gap-1">
+                                                <div class="results d-flex gap-1">
                                                     <p class="py-1 px-2 text-white rounded-circle red-bg">07</p>
                                                     <p class="py-1 px-2 text-white rounded-circle red-bg">07</p>
                                                     <p class="py-1 px-2 text-white rounded-circle red-bg">07</p>
@@ -391,7 +412,7 @@
                                     <div class="d-flex flex-column justify-content-between">
                                         <p class="fw-bold text-center text-sm-start">Shaun Vincent a Lottery Winner</p>
                                         <p class="py-3">Shaun Vincent, from Barnsley, celebrates his £1,158,038 National Lottery win after his cheque presentation at the Cedar Court Hotel, Wakefield.</p>
-                                        <a class="fw-regular text-decoration-none text-primary text-center text-md-start" href="#">Read the full story</a>
+                                        <a class="fw-regular text-primary text-center text-md-start" href="#" title="Read the full story">Read the full story</a>
                                         <button class="yellow-btn mt-4 mb-1 px-4 border-0 rounded-3 w-100 fw-semibold"> Play Now</button>
                                     </div>
                                 </div>
@@ -446,9 +467,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- faq -->
-                <div class="mt-5 pt-4">
+                </section>
+                <section class="mt-5 pt-4">
                     <p class="fw-bold">FREQUENTLY ASKED QUESTION (F.A.Q.)</p>
                     <div class="row mt-3">
                         <div class="px-0 col-12 col-lg-10 col-xl-8 accordion accordion-flush" id="accordionFlushExample">
@@ -484,8 +504,8 @@
                         </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
         <footer class="mt-5 pb-5">
             <div class="d-flex justify-content-between align-items-center">
@@ -513,28 +533,28 @@
             <div class="d-flex flex-column flex-md-row justify-content-between gap-4 gap-md-0 mt-4">
                 <div class="">
                     <p class="fs-5 text-uppercase fw-semibold mb-3">Useful Links</p>
-                    <div class="ps-0 fs-14 d-flex flex-row flex-md-column gap-4 gap-md-0">
-                        <div class="col-6 col-sm-12 d-flex flex-column gap-2 mb-2 mb-md-0">
+                    <div role="" class="ps-0 fs-14 d-flex flex-row flex-md-column gap-4 gap-md-0">
+                        <ul class="ps-0 col-6 col-sm-12 d-flex flex-column gap-2 mb-0 mb-md-2">
                             <li>Home</li>
                             <li>Lottery Results & Winners</li>
                             <li>Lottery Promotions</li>
                             <li>About Us</li>
                             <li>Contact Us</li>
-                        </div>
-                        <div class="col-6 col-sm-12 d-flex flex-column gap-2">
+                        </ul>
+                        <ul class="ps-0 col-6 col-sm-12 d-flex flex-column gap-2">
                             <li>Terms & Conditions</li>
                             <li>Security</li>
                             <li>Privacy Policy</li>
                             <li>Acceptable Use Policy</li>
                             <li>Website Use Policy</li>
                             <li class="fw-semibold">Affiliate program</li>
-                        </div>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 g-4">
-                    <p class="fw-semibold fs-5 text-uppercase mb-3">Smart Winners</p>
+                    <p class="fw-semibold fs-5 text-uppercase mb-3">SmartWinners</p>
                     <p class="fs-13 mb-2">The trade name SmartWinners and all content on this website is a copyright of SmartWinners Limited. All rights reserved. We are an independent lottery ticket purchasing service. We are not affiliated with nor are we endorsed by any State sanctioned lottery organization. We make no claims on our site to be such. </p>
-                    <p class="fs-12">Our registered business address is <br /> Unit 6158, PO Box 6945, London, W1A 6US, <br /> United Kingdom.</p>
+                    <p class="fs-13">Our registered business address is <br /> Unit 6158, PO Box 6945, London, W1A 6US, <br /> United Kingdom.</p>
                 </div>
                 <div class="last d-flex flex-row flex-md-column gap-4 gap-md-0">
                     <div>
