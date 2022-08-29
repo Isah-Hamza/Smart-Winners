@@ -6,11 +6,13 @@ p, li, ul{
     margin-bottom: 0 !important;
     list-style: none;
 }
+.z-1{ z-index: 1 !important; }
 .fs-12{ font-size: 12px;}
 .fs-13{ font-size: 13px;}
 .fs-14{ font-size: 14px; }
 .fw-regular { font-weight: 500; }
 .light-gray{ color: #5F5F5F; }
+.rounded-3{ border-radius: 6px !important; }
 .cp{ cursor: pointer; }
 .bg-primary{
     background-color: var(--custom-blue);
@@ -19,7 +21,7 @@ p, li, ul{
     color:var(--custom-blue) !important;
 }
 .custom-container{
-    max-width: 1250px;
+    max-width: 1200px;
     /* font-family: 'Roboto', sans-serif; */
 }
 .logo{
@@ -91,7 +93,7 @@ footer{
     padding-top: 100px !important;
     padding-right: 10% !important;
     padding-left: 10% !important;
-    background: url(assets/images/star-pattern.png) no-repeat , linear-gradient(0deg, rgba(224, 224, 224, 0.47) 0%, rgba(225, 225, 225, 0.16) 20.75%, rgba(255, 254, 254, 0.26) 84.14%, #FFFFFF 126.52%);
+    background: url(../assets/images/star-pattern-min.png) no-repeat , linear-gradient(0deg, rgba(224, 224, 224, 0.47) 0%, rgba(225, 225, 225, 0.16) 20.75%, rgba(255, 254, 254, 0.26) 84.14%, #FFFFFF 126.52%);
     background-size: contain;
 }   
 footer ul li{ cursor: pointer; }
@@ -129,7 +131,12 @@ footer ul li{ cursor: pointer; }
     }
     nav.rounded-3{ border-radius: 0px !important; }
     
-    nav ul li { color: white; }
+    nav ul li { 
+        color: white; 
+    }
+    nav ul li.border-end{
+        border-right: none !important;
+    }
 
     nav button.h-100{
         height: unset !important;
@@ -152,16 +159,25 @@ footer ul li{ cursor: pointer; }
 }
 
 @media screen and (max-width:768px) {
+    .border { border: 1px solid gainsboro}
+    .welcome { margin-top: 70px !important; }
+    header .logo{
+        position: fixed !important;
+    }
     .five-grid{
         grid-template-columns: repeat(3,1fr);
     }
 }
 
 @media screen and (max-width:542px) {
+    .w-250{ 
+        width: 250px !important; 
+    }
     .custom-container{ padding-inline: 14px !important; }
     header .left div:last-of-type{
         font-size: 14px;
     }
+    .welcome { margin-top: 55px !important; }
     header .logo-img { width: 210px !important; }
     .hero img{ height: 180px; }
     .hero img,

@@ -8,7 +8,7 @@
     <meta name="keywords" content="Smart Winners, Online Lottery, Online Game,Win, Pick, Buy, Meta Million, "/>
     <meta name="author" content="Isah Hamza">
 
-    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
     <title>Smart Winners</title>
 
     <!-- Google Fonts -->
@@ -20,13 +20,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     
     <!-- Custom styles -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dist/styles.css">
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
     <!-- Custom Javascript -->
-    <script defer src="./main.js"></script>
+    <script defer src="dist/main.js"></script>
 
 </head>
 <body>
@@ -34,14 +34,14 @@
         <header class="w-100">
             <div class="w-100 d-flex justify-content-between">
                 <div class="left d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center w-100">
-                    <div class="logo d-flex justify-content-between align-items-center d-lg-block">
+                    <div data-logo class="logo z-1 top-0 start-0 px-3 px-md-0 bg-white py-3 py-md-0 d-flex justify-content-between align-items-center d-lg-block">
                         <div data-menu class="d-block d-lg-none">
-                            <img src="assets/images/menu.png" alt="menu">
+                            <img src="./assets/images/menu.png" alt="menu">
                         </div>
                         <img class="logo-img" src="./assets/images/logo.png" alt="Smart Winners Logo" />
-                        <img class="d-block d-lg-none mt-1" src="assets/images/avatar.png" alt="avatar">
+                        <img class="d-block d-lg-none mt-1" src="./assets/images/avatar.png" alt="avatar">
                     </div>
-                    <div  class="w-100 d-flex align-items-center justify-content-between d-lg-block">
+                    <div class="welcome w-100 d-flex align-items-center justify-content-between d-lg-block mt-5 mt-md-0">
                         <div class="d-flex">
                             <p>Welcome <span class="fw-bold">Roma</span></p> <span class="mx-2">-</span>  
                             <span role="button" class="fw-semibold" style="color:#0061A3">Logout</span>
@@ -65,9 +65,9 @@
                         </div>
                     </div>
                     <div role="button" class="ms-1 mt-2 d-flex gap-3 align-items-center">
-                        <img width="20" src="assets/images/country.png" alt="country" />
+                        <img width="20" src="./assets/images/country.png" alt="country" />
                         <span class="">English</span>
-                        <img  src="assets/images/caret-down.png" alt="caret-down">
+                        <img  src="./assets/images/caret-down.png" alt="caret-down">
                     </div>
                 </div>
             </div>
@@ -86,20 +86,20 @@
         </header>
         <main class="mt-5">
             <section class="hero mb-2">
-                <img class="d-none d-lg-block w-100" src="./assets/images/desktop-banner.png" alt="banner">
-                <img class="d-block d-lg-none w-100" src="./assets/images/banner-small.png" alt="banner">
+                <img class="d-none d-lg-block w-100" src="./assets/images/desktop-banner-min.png" alt="banner">
+                <img class="d-block d-lg-none w-100" src="./assets/images/banner-small-min.png" alt="banner">
             </section>
             <div class="my-4 ">
                 <section class="row gy-2 gy-md-4 pt-2 px-2 px-md-0">
                     <div class="px-0 px-sm-2 col-12 col-md-6 col-lg-4">
                         <div class="pick d-flex gap-2 h-100 border rounded-3 p-2">
                             <div>
-                                <img src="assets/images/pick.png" alt="you pick">
+                                <img src="./assets/images/pick.png" alt="you pick">
                             </div>
                             <div>
                                 <div class="fs-14 d-flex justify-content-between align-items-center mb-1">
                                     <p class="text-uppercase fw-bold">you pick</p>
-                                    <a href="#" title="Play Now">Play Now > <span style="margin-left: -8px;" class="d-inline-block">></span></a>
+                                    <a class="fs-13" href="#" title="Play Now">Play Now > <span style="margin-left: -8px;" class="d-inline-block fs-13">></span></a>
                                 </div>
                                 <p class="fs-13 light-gray">It’s easy! Pick from over 40 official lottery games you wish to play. Then select your winning numbers.</p>
                             </div>
@@ -108,13 +108,13 @@
                     <div class="px-0 px-sm-2 col-12 col-md-6 col-lg-4">
                        <div class="buy d-flex gap-2 h-100 border rounded-3 p-2">
                             <div>
-                                <img src="assets/images/buy.png" alt="we buy">
+                                <img src="./assets/images/buy.png" alt="we buy">
                             </div>
                             <div>
                                 <div class="fs-14 d-flex justify-content-between align-items-center mb-1">
                                     <p class="text-uppercase fw-bold">we buy</p>
-                                    <a href="#" title="More Details">More Details >
-                                    <span style="margin-left: -8px;" class="d-inline-block">></span> </a>
+                                    <a class="fs-13" href="#" title="More Details">More Details >
+                                    <span style="margin-left: -8px;" class="d-inline-block fs-13">></span> </a>
                                 </div>
                                 <p class="fs-13 light-gray">Once you’ve picked your winning numbers we’ll purchase your ticket on your behalf.</p>
                             </div>
@@ -123,12 +123,12 @@
                     <div class="px-0 px-sm-2 col-12 col-md-6 col-lg-4">
                         <div class="win d-flex h-100 border rounded-3 p-2 pl-0">
                             <div>
-                                <img src="assets/images/win.png" alt="you win">
+                                <img src="./assets/images/win.png" alt="you win">
                             </div>
                             <div>
                                 <div class="fs-14 d-flex justify-content-between align-items-center mb-1">
                                     <p class="text-uppercase fw-bold">you win!!!</p>
-                                    <a href="#" title="Withdraw My Winnings">Withdraw My Winnings >
+                                    <a class="fs-13" href="#" title="Withdraw My Winnings">Withdraw My Winnings >
                                         <span style="margin-left: -8px;" class="d-inline-block">></span>
                                     </a>
                                 </div>
@@ -144,7 +144,7 @@
                             <div class="h-100 border rounded-3 overflow-hidden">
                                 <div class="p-3 py-2 d-flex gap-4 align-items-center">
                                     <div class="banner-container d-flex align-items-center justify-content-center align-items-center p-3 px-4 border rounded-circle">
-                                        <img width="50" src="assets/images/oz-lotto.png" alt="">
+                                        <img width="50" src="./assets/images/oz-lotto.png" alt="">
                                     </div>
                                     <div>
                                         <div class="d-flex gap-2">
@@ -157,8 +157,8 @@
                                 <div style="height:55px;" class="bg-primary d-flex align-items-center gap-4 p-3">
                                     <button style="" class="yellow-btn px-4 border-0 rounded-3 w-50 fw-semibold"> Play Now</button>
                                     <div class="d-flex align-items-center gap-2">
-                                        <img src="assets/images/alarm.png" alt="alarm">
-                                        <p class="text-white">1:22:01</p>
+                                        <img src="./assets/images/alarm.png" alt="alarm">
+                                        <p class="text-white fw-regular">1:22:01</p>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +167,7 @@
                             <div class="h-100 border rounded-3 overflow-hidden">
                                 <div class="p-3 py-2 d-flex gap-4 align-items-center">
                                     <div class="banner-container d-flex align-items-center justify-content-center align-items-center p-3 px-4 border rounded-circle">
-                                        <img width="95" src="assets/images/mega-million.png" alt="mega-million">
+                                        <img width="95" src="./assets/images/mega-million.png" alt="mega-million">
                                     </div>
                                     <div>
                                         <div class="d-flex gap-2">
@@ -180,8 +180,8 @@
                                 <div style="height:55px;" class="bg-primary d-flex align-items-center gap-4 p-3">
                                     <button style="" class="yellow-btn px-4 border-0 rounded-3 w-50 fw-semibold"> Play Now</button>
                                     <div class="d-flex align-items-center gap-2">
-                                        <img src="assets/images/alarm.png" alt="alarm">
-                                        <p class="text-white">1:22:01</p>
+                                        <img src="./assets/images/alarm.png" alt="alarm">
+                                        <p class="text-white fw-regular">1:22:01</p>
                                     </div>
                                 </div>
                             </div>
@@ -190,7 +190,7 @@
                             <div class="h-100 border rounded-3 overflow-hidden">
                                 <div class="p-3 py-2 d-flex gap-4 align-items-center">
                                     <div class="banner-container d-flex align-items-center justify-content-center align-items-center p-3 px-4 border rounded-circle">
-                                        <img width="120" src="assets/images/power.png" alt="power ball">
+                                        <img width="120" src="./assets/images/power.png" alt="power ball">
                                     </div>
                                     <div>
                                         <div class="d-flex gap-2">
@@ -203,8 +203,8 @@
                                 <div style="height:55px;" class="bg-primary d-flex align-items-center gap-4 p-3">
                                     <button style="" class="yellow-btn px-4 border-0 rounded-3 w-50 fw-semibold"> Play Now</button>
                                     <div class="d-flex align-items-center gap-2">
-                                        <img src="assets/images/alarm.png" alt="alarm">
-                                        <p class="text-white">1:22:01</p>
+                                        <img src="./assets/images/alarm.png" alt="alarm">
+                                        <p class="text-white fw-regular">1:22:01</p>
                                     </div>
                                 </div>
                             </div>
@@ -215,9 +215,9 @@
                     <button class="red-bg rounded-3 text-center text-white p-2 border-0 w-100 fw-semibold">PLAY UPCOMING LOTTERIES ONLINE</button>
                     <div class="five-grid d-grid mt-4 px-md-2 px-lg-4">
                         <div data-tenTimes class="position-relative p-2 d-flex flex-column justify-content-center align-items-center border rounded-3">
-                            <img class="position-absolute star" src="assets/images/star.png" alt="star">
+                            <img class="position-absolute star" src="./assets/images/star.png" alt="star">
                             <div class="square-100 d-flex justify-content-center align-items-center p-3 rounded-circle border">
-                                <img width="95" class="align-self-center" src="assets/images/mega-million.png" alt="mega-million">
+                                <img width="95" class="align-self-center" src="./assets/images/mega-million.png" alt="mega-million">
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
@@ -225,15 +225,15 @@
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
-                                <img src="assets/images/alarm-blue.png" alt="alarm">
+                                <img src="./assets/images/alarm-blue.png" alt="alarm">
                                 <p class="text-primary fw-semibold">1:22:01</p>
                             </div>
                             <button style="" class="text-center yellow-btn px-4 border-0 rounded-3 w-100 mt-2 fw-semibold"> Play Now</button>
                         </div>
                         <div data-tenTimes class="position-relative p-2 d-flex flex-column justify-content-center align-items-center border rounded-3">
-                            <img class="position-absolute star" src="assets/images/star.png" alt="star">
+                            <img class="position-absolute star" src="./assets/images/star.png" alt="star">
                             <div class="square-100 d-flex justify-content-center align-items-center p-3 rounded-circle border">
-                                <img width="95" class="align-self-center" src="assets/images/mega-million.png" alt="mega-million">
+                                <img width="95" class="align-self-center" src="./assets/images/mega-million.png" alt="mega-million">
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
@@ -241,15 +241,15 @@
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
-                                <img src="assets/images/alarm-blue.png" alt="alarm">
+                                <img src="./assets/images/alarm-blue.png" alt="alarm">
                                 <p class="text-primary fw-semibold">1:22:01</p>
                             </div>
                             <button style="" class="text-center yellow-btn px-4 border-0 rounded-3 w-100 mt-2 fw-semibold"> Play Now</button>
                         </div>
                         <div data-tenTimes class="position-relative p-2 d-flex flex-column justify-content-center align-items-center border rounded-3">
-                            <img class="position-absolute star" src="assets/images/star.png" alt="star">
+                            <img class="position-absolute star" src="./assets/images/star.png" alt="star">
                             <div class="square-100 d-flex justify-content-center align-items-center p-3 rounded-circle border">
-                                <img width="95" class="align-self-center" src="assets/images/mega-million.png" alt="mega-million">
+                                <img width="95" class="align-self-center" src="./assets/images/mega-million.png" alt="mega-million">
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
@@ -257,15 +257,15 @@
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
-                                <img src="assets/images/alarm-blue.png" alt="alarm">
+                                <img src="./assets/images/alarm-blue.png" alt="alarm">
                                 <p class="text-primary fw-semibold">1:22:01</p>
                             </div>
                             <button style="" class="text-center yellow-btn px-4 border-0 rounded-3 w-100 mt-2 fw-semibold"> Play Now</button>
                         </div>
                         <div data-tenTimes class="position-relative p-2 d-flex flex-column justify-content-center align-items-center border rounded-3">
-                            <img class="position-absolute star" src="assets/images/star.png" alt="star">
+                            <img class="position-absolute star" src="./assets/images/star.png" alt="star">
                             <div class="square-100 d-flex justify-content-center align-items-center p-3 rounded-circle border">
-                                <img width="95" class="align-self-center" src="assets/images/mega-million.png" alt="mega-million">
+                                <img width="95" class="align-self-center" src="./assets/images/mega-million.png" alt="mega-million">
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
@@ -273,15 +273,15 @@
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
-                                <img src="assets/images/alarm-blue.png" alt="alarm">
+                                <img src="./assets/images/alarm-blue.png" alt="alarm">
                                 <p class="text-primary fw-semibold">1:22:01</p>
                             </div>
                             <button style="" class="text-center yellow-btn px-4 border-0 rounded-3 w-100 mt-2 fw-semibold"> Play Now</button>
                         </div>
                         <div data-tenTimes class="position-relative p-2 d-flex flex-column justify-content-center align-items-center border rounded-3">
-                            <img class="position-absolute star" src="assets/images/star.png" alt="star">
+                            <img class="position-absolute star" src="./assets/images/star.png" alt="star">
                             <div class="square-100 d-flex justify-content-center align-items-center p-3 rounded-circle border">
-                                <img width="95" class="align-self-center" src="assets/images/mega-million.png" alt="mega-million">
+                                <img width="95" class="align-self-center" src="./assets/images/mega-million.png" alt="mega-million">
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
@@ -289,15 +289,15 @@
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
-                                <img src="assets/images/alarm-blue.png" alt="alarm">
+                                <img src="./assets/images/alarm-blue.png" alt="alarm">
                                 <p class="text-primary fw-semibold">1:22:01</p>
                             </div>
                             <button style="" class="text-center yellow-btn px-4 border-0 rounded-3 w-100 mt-2 fw-semibold"> Play Now</button>
                         </div>
                         <div data-tenTimes class="position-relative p-2 d-flex flex-column justify-content-center align-items-center border rounded-3">
-                            <img class="position-absolute star" src="assets/images/star.png" alt="star">
+                            <img class="position-absolute star" src="./assets/images/star.png" alt="star">
                             <div class="square-100 d-flex justify-content-center align-items-center p-3 rounded-circle border">
-                                <img width="95" class="align-self-center" src="assets/images/mega-million.png" alt="mega-million">
+                                <img width="95" class="align-self-center" src="./assets/images/mega-million.png" alt="mega-million">
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
@@ -305,15 +305,15 @@
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
-                                <img src="assets/images/alarm-blue.png" alt="alarm">
+                                <img src="./assets/images/alarm-blue.png" alt="alarm">
                                 <p class="text-primary fw-semibold">1:22:01</p>
                             </div>
                             <button style="" class="text-center yellow-btn px-4 border-0 rounded-3 w-100 mt-2 fw-semibold"> Play Now</button>
                         </div>
                         <div data-tenTimes class="position-relative p-2 d-flex flex-column justify-content-center align-items-center border rounded-3">
-                            <img class="position-absolute star" src="assets/images/star.png" alt="star">
+                            <img class="position-absolute star" src="./assets/images/star.png" alt="star">
                             <div class="square-100 d-flex justify-content-center align-items-center p-3 rounded-circle border">
-                                <img width="95" class="align-self-center" src="assets/images/mega-million.png" alt="mega-million">
+                                <img width="95" class="align-self-center" src="./assets/images/mega-million.png" alt="mega-million">
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
@@ -321,15 +321,15 @@
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
-                                <img src="assets/images/alarm-blue.png" alt="alarm">
+                                <img src="./assets/images/alarm-blue.png" alt="alarm">
                                 <p class="text-primary fw-semibold">1:22:01</p>
                             </div>
                             <button style="" class="text-center yellow-btn px-4 border-0 rounded-3 w-100 mt-2 fw-semibold"> Play Now</button>
                         </div>
                         <div data-tenTimes class="position-relative p-2 d-flex flex-column justify-content-center align-items-center border rounded-3">
-                            <img class="position-absolute star" src="assets/images/star.png" alt="star">
+                            <img class="position-absolute star" src="./assets/images/star.png" alt="star">
                             <div class="square-100 d-flex justify-content-center align-items-center p-3 rounded-circle border">
-                                <img width="95" class="align-self-center" src="assets/images/mega-million.png" alt="mega-million">
+                                <img width="95" class="align-self-center" src="./assets/images/mega-million.png" alt="mega-million">
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
@@ -337,15 +337,15 @@
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
-                                <img src="assets/images/alarm-blue.png" alt="alarm">
+                                <img src="./assets/images/alarm-blue.png" alt="alarm">
                                 <p class="text-primary fw-semibold">1:22:01</p>
                             </div>
                             <button style="" class="text-center yellow-btn px-4 border-0 rounded-3 w-100 mt-2 fw-semibold"> Play Now</button>
                         </div>
                         <div data-tenTimes class="position-relative p-2 d-flex flex-column justify-content-center align-items-center border rounded-3">
-                            <img class="position-absolute star" src="assets/images/star.png" alt="star">
+                            <img class="position-absolute star" src="./assets/images/star.png" alt="star">
                             <div class="square-100 d-flex justify-content-center align-items-center p-3 rounded-circle border">
-                                <img width="95" class="align-self-center" src="assets/images/mega-million.png" alt="mega-million">
+                                <img width="95" class="align-self-center" src="./assets/images/mega-million.png" alt="mega-million">
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
@@ -353,15 +353,15 @@
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
-                                <img src="assets/images/alarm-blue.png" alt="alarm">
+                                <img src="./assets/images/alarm-blue.png" alt="alarm">
                                 <p class="text-primary fw-semibold">1:22:01</p>
                             </div>
                             <button style="" class="text-center yellow-btn px-4 border-0 rounded-3 w-100 mt-2 fw-semibold"> Play Now</button>
                         </div>
                         <div data-tenTimes class="position-relative p-2 d-flex flex-column justify-content-center align-items-center border rounded-3">
-                            <img class="position-absolute star" src="assets/images/star.png" alt="star">
+                            <img class="position-absolute star" src="./assets/images/star.png" alt="star">
                             <div class="square-100 d-flex justify-content-center align-items-center p-3 rounded-circle border">
-                                <img width="95" class="align-self-center" src="assets/images/mega-million.png" alt="mega-million">
+                                <img width="95" class="align-self-center" src="./assets/images/mega-million.png" alt="mega-million">
                             </div>
                             <div class="d-flex gap-2 mt-4">
                                 <img class="align-self-end mb-1 " src="./assets/images/country.png" alt="country">
@@ -369,7 +369,7 @@
                             </div>
                             <p class=" fw-bold fs-5">$122 000 000</p>
                             <div class="d-flex align-items-center gap-2">
-                                <img src="assets/images/alarm-blue.png" alt="alarm">
+                                <img src="./assets/images/alarm-blue.png" alt="alarm">
                                 <p class="text-primary fw-semibold">1:22:01</p>
                             </div>
                             <button style="" class="text-center yellow-btn px-4 border-0 rounded-3 w-100 mt-2 fw-semibold"> Play Now</button>
@@ -386,7 +386,7 @@
                             <button class="red-bg rounded-3 text-center text-white p-2 border-0 w-100 fw-semibold">BIGGEST LOTTERY WINNER</button>
                             <div class="border mt-3 rounded-2 py-3 px-2">
                                 <div class="d-flex align-items-center justify-content-center gap-3 mb-4 mt-1">
-                                    <img src="/assets/images/lotto.png" alt="lotto">
+                                    <img src="./assets/images/lotto.png" alt="lotto">
                                     <div class="d-flex fw-bold fs-5">
                                         <p>WON</p>
                                         <p class="ms-2 text-primary">€100 000 000</p>
@@ -394,7 +394,7 @@
                                 </div>
                                 <div class="d-flex flex-column flex-md-row gap-3">
                                     <div class="d-flex flex-column">
-                                        <img  class="biggest-winners mx-auto" src="/assets/images/biggest-winners.png" alt="bigest winner">
+                                        <img  class="biggest-winners mx-auto" src="./assets/images/biggest-winners.png" alt="bigest winner">
                                         <div class="mt-3 d-flex justify-content-center gap-3">
                                             <p class="fw-regular text-uppercase fs-6 text-nowrap">UK Lotto results:</p>
                                             <div>
@@ -413,7 +413,7 @@
                                         <p class="fw-bold text-center text-sm-start">Shaun Vincent a Lottery Winner</p>
                                         <p class="py-3">Shaun Vincent, from Barnsley, celebrates his £1,158,038 National Lottery win after his cheque presentation at the Cedar Court Hotel, Wakefield.</p>
                                         <a class="fw-regular text-primary text-center text-md-start" href="#" title="Read the full story">Read the full story</a>
-                                        <button class="yellow-btn mt-4 mb-1 px-4 border-0 rounded-3 w-100 fw-semibold"> Play Now</button>
+                                        <button class="w-250 mx-auto mx-sm-0 yellow-btn mt-4 mb-1 px-4 border-0 rounded-3 w-100 fw-semibold"> Play Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -430,34 +430,34 @@
                                     </div>
                                 </div>
                                 <div class="d-flex flex-column gap-2 gap-xl-3 mt-auto">
-                                    <div class="d-flex gap-2 border rounded-2 p-2">
-                                        <img src="assets/images/winner.png" alt="winner">
+                                    <div class="d-flex gap-3 border rounded-2 p-2">
+                                        <img src="./assets/images/winner.png" alt="winner">
                                         <div class="fs-14">
                                             <p class="light-gray fs-12">20.11.2021</p>
                                             <div class="d-flex gap-1 align-items-center ">
-                                                <img src="assets/images/germany.png" alt="germany logo">
+                                                <img src="./assets/images/germany.png" alt="germany logo">
                                                 <p class="fw-semibold">J.J won  Р175</p>
                                             </div>
                                             <p class="light-gray">in   7 ИЗ 49   draw  #13476</p>
                                         </div>
                                     </div>
-                                    <div class="d-flex gap-2 border rounded-2 p-2">
-                                        <img src="assets/images/winner.png" alt="winner">
+                                    <div class="d-flex gap-3 border rounded-2 p-2">
+                                        <img src="./assets/images/winner.png" alt="winner">
                                         <div class="fs-14">
                                             <p class="light-gray fs-12">20.11.2021</p>
                                             <div class="d-flex gap-1 align-items-center ">
-                                                <img src="assets/images/germany.png" alt="germany logo">
+                                                <img src="./assets/images/germany.png" alt="germany logo">
                                                 <p class="fw-semibold">J.J won  Р175</p>
                                             </div>
                                             <p class="light-gray">in   7 ИЗ 49   draw  #13476</p>
                                         </div>
                                     </div>
-                                    <div class="d-flex gap-2 border rounded-2 p-2">
-                                        <img src="assets/images/winner.png" alt="winner">
+                                    <div class="d-flex gap-3 border rounded-2 p-2">
+                                        <img src="./assets/images/winner.png" alt="winner">
                                         <div class="fs-14">
                                             <p class="light-gray fs-12">20.11.2021</p>
                                             <div class="d-flex gap-1 align-items-center ">
-                                                <img src="assets/images/germany.png" alt="germany logo">
+                                                <img src="./assets/images/germany.png" alt="germany logo">
                                                 <p class="fw-semibold">J.J won  Р175</p>
                                             </div>
                                             <p class="light-gray">in   7 ИЗ 49   draw  #13476</p>
@@ -560,22 +560,22 @@
                     <div>
                         <p class="fw-semibold fs-5 text-uppercase mb-3">Payment Methods</p>
                         <div class="methods">
-                            <img src="assets/images/Visa-dark.png" alt="Visa-dark">
-                            <img src="assets/images/MasterCard-dark.png" alt="MasterCard-dark">
-                            <img src="assets/images/Maestro-dark.png" alt="Maestro-dark">
-                            <img src="assets/images/DinersClub-dark.png" alt="DinersClub-dark">
-                            <img src="assets/images/Skrill-dark.png" alt="Skrill-dark">
-                            <img src="assets/images/Bitcoin-dark.png" alt="Bitcoin-dark">
-                            <img src="assets/images/qiwi 1.png" alt="qiwi">
-                            <img src="assets/images/hsbc 1.png" alt="hsbc">
-                            <img src="assets/images/litecoin 1.png" alt="litecoin">
+                            <img src="./assets/images/Visa-dark.png" alt="Visa-dark">
+                            <img src="./assets/images/MasterCard-dark.png" alt="MasterCard-dark">
+                            <img src="./assets/images/Maestro-dark.png" alt="Maestro-dark">
+                            <img src="./assets/images/DinersClub-dark.png" alt="DinersClub-dark">
+                            <img src="./assets/images/Skrill-dark.png" alt="Skrill-dark">
+                            <img src="./assets/images/Bitcoin-dark.png" alt="Bitcoin-dark">
+                            <img src="./assets/images/qiwi 1.png" alt="qiwi">
+                            <img src="./assets/images/hsbc 1.png" alt="hsbc">
+                            <img src="./assets/images/litecoin 1.png" alt="litecoin">
                         </div>
                     </div>
                     <div class="mt-md-4">
                         <p class="fw-semibold mb-3 fs-5 text-uppercase">Security & Trust</p>
                         <div class="d-flex gap-2">
-                            <img width="60px" src="assets/images/ctv 1.png" alt="ctv">
-                            <img width="60px" src="assets/images/comodo.png" alt="comodo">
+                            <img width="60px" src="./assets/images/ctv 1.png" alt="ctv">
+                            <img width="60px" src="./assets/images/comodo.png" alt="comodo">
                         </div>
                         <div class="mt-3 d-flex d-md-none gap-2 align-items-center">
                             <div role="button" class="rounded-circle d-flex align-items-center justify-content-center facebook bg-blue">
